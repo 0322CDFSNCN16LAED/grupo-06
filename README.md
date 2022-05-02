@@ -22,5 +22,6 @@ En nuestro sitio web se podrán comprar productos alimenticios, de limpieza e hi
 
 
 ## Referentes
-https://www.jumbo.com.ar/ -> Display de productos que podrian interesarte
-https://supermercado.laanonimaonline.com/ -> Tarjeta simple del producto buscado
+https://www.jumbo.com.ar/ -> Display de productos que podrian interesarte.
+https://supermercado.laanonimaonline.com/ -> Tarjeta simple del producto buscado.
+
