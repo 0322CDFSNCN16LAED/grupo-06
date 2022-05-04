@@ -12,7 +12,7 @@ En nuestro sitio web se podrán comprar productos alimenticios, de limpieza e hi
 [Descripción]
 
 ### Tomás Aristimuño
-[Descripción]
+Hola soy Tomás Aristimuño y tengo 22 años. Trabajo como cobrador para una fábrica de quesos y desde principio del 2022 empecé a estudiar programación, en este sitio web es donde voy a aplicar todos mis conocimientos obtenidos hasta la fecha.
 
 ### Joaquin Bordino
 [Descripción]
