@@ -18,7 +18,7 @@ Hola soy Tomás Aristimuño y tengo 22 años. Trabajo como cobrador para una fá
 Buenass soy Joaquín Bordino, tengo 20 años. Estudié 1 año de comunicación y me di cuenta que no era lo mío, por lo cual me decidí por empezar en el mundo de la progamación este año, estoy con muchas ganas de aprender y meterle para adelante en todos y cada uno de los proyectos. 
 
 ### Juan Santiago Urquiza
-[Descripción]
+Soy Juan Santiago Urquiza, tengo 31 años y me gradué de Licenciado en Gerenciamiento Económico Intercultural. En este momento estoy buscnado expandir mi carrera profesional hacia el mundo de la informática y especializarme como web developer.
 
 ### Manuel Fuente Moreno
 Soy Manu Fuent Moreno. Tengo 26 años. Estudié comunicación, eso me llevó a conocer Diseño UX y el Diseño UX me despertó las ganas de programar. En este sitio trabajaremos en equipo para aprender lo máximo posible.
