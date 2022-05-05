@@ -21,7 +21,7 @@ Hola soy Tomás Aristimuño y tengo 22 años. Trabajo como cobrador para una fá
 [Descripción]
 
 ### Manuel Fuente Moreno
-[Descripción]
+Soy Manu Fuent Moreno. Tengo 26 años. Estudié comunicación, eso me llevó a conocer Diseño UX y el Diseño UX me despertó las ganas de programar. En este sitio trabajaremos en equipo para aprender lo máximo posible.
 
 ## Referentes
 https://www.jumbo.com.ar/ -> Display de productos que podrian interesarte.
