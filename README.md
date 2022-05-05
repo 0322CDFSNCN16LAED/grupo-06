@@ -15,7 +15,7 @@ En nuestro sitio web se podrán comprar productos alimenticios, de limpieza e hi
 Hola soy Tomás Aristimuño y tengo 22 años. Trabajo como cobrador para una fábrica de quesos y desde principio del 2022 empecé a estudiar programación, en este sitio web es donde voy a aplicar todos mis conocimientos obtenidos hasta la fecha.
 
 ### Joaquin Bordino
-[Descripción]
+Buenass soy Joaquín Bordino, tengo 20 años. Estudié 1 año de comunicación y me di cuenta que no era lo mío, por lo cual me decidí por empezar en el mundo de la progamación este año, estoy con muchas ganas de aprender y meterle para adelante en todos y cada uno de los proyectos.
 
 ### Juan Santiago Urquiza
 [Descripción]
