@@ -28,6 +28,6 @@ https://www.jumbo.com.ar/ -> Display de productos que podrian interesarte.
 https://supermercado.laanonimaonline.com/ -> Tarjeta simple del producto buscado.
 
 
-### Organizando el trabajo en
+## Tablero de organización 
 https://trello.com/invite/b/xM5RXUVw/51965ed943cc6e826505eded079568ee/proyecto-integrador
 
