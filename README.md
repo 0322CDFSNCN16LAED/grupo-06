@@ -27,3 +27,7 @@ Soy Manu Fuent Moreno. Tengo 26 años. Estudié comunicación, eso me llevó a c
 https://www.jumbo.com.ar/ -> Display de productos que podrian interesarte.
 https://supermercado.laanonimaonline.com/ -> Tarjeta simple del producto buscado.
 
+
+### Organizando el trabajo en
+https://trello.com/invite/b/xM5RXUVw/51965ed943cc6e826505eded079568ee/proyecto-integrador
+
