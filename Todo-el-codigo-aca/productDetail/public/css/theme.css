@@ -1,0 +1,56 @@
+header{
+    background-color: #1259c3;
+}
+main{
+    background-color:#ebebeb;
+}
+footer{
+    background-color: #1259c3;
+}
+h1{
+    margin: 0vh;
+    margin: 0vw;
+}
+.alcerLogo{
+    width: 30vw;
+    margin: 0vh;
+    margin: 0vw;
+}
+.list{
+    margin: 0vh;
+    margin: 0vw;
+    padding: 0;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.productPrincipalImage{
+    width: 100vw;
+    margin: 0vh;
+    margin: 0vw;
+}
+.productSecondaryImage{
+    width:20vw ;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.relatedProducts{
+    text-align: center;
+    border-top: solid black;
+}
+.relatedProduct{
+    width: 100vw;
+}
+.relatedProductImage{
+    width: 40vw;
+}
+.footer{
+    text-align: center;
+    border-top: solid black;
+}
+.socialMedia{
+    border-top: solid gray;
+    color: black;
+    text-decoration: none;
+}
