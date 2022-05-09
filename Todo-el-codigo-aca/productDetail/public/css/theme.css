@@ -1,11 +1,14 @@
 header{
-    background-color: #1259c3;
+    background-color: #c0d3ee;
 }
 main{
-    background-color:#ebebeb;
+    background-color:#f1ef6363;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
 }
 footer{
-    background-color: #1259c3;
+    background-color: #c0d3ee;
 }
 h1{
     margin: 0vh;
@@ -26,15 +29,15 @@ a{
     text-decoration: none;
 }
 .productPrincipalImage{
-    width: 100vw;
+    width: 90vw;
     margin: 0vh;
     margin: 0vw;
     box-shadow:inset;
 }
 .productSecondaryImage{
     width:20vw ;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    margin-left: 0vw;
+    margin-right: 0vw;
     box-shadow:inset;
 }
 .relatedProducts{
@@ -42,10 +45,12 @@ a{
     border-top: solid black;
 }
 .relatedProduct{
-    width: 100vw;
+    width: 90vw;
 }
 .relatedProductImage{
     width: 40vw;
+    margin-left: 0vw;
+    margin-right: 0vw;
     box-shadow:inset;
 }
 .footer{
