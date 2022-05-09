@@ -29,11 +29,13 @@ a{
     width: 100vw;
     margin: 0vh;
     margin: 0vw;
+    box-shadow:inset;
 }
 .productSecondaryImage{
     width:20vw ;
     margin-left: 5vw;
     margin-right: 5vw;
+    box-shadow:inset;
 }
 .relatedProducts{
     text-align: center;
@@ -44,6 +46,7 @@ a{
 }
 .relatedProductImage{
     width: 40vw;
+    box-shadow:inset;
 }
 .footer{
     text-align: center;
