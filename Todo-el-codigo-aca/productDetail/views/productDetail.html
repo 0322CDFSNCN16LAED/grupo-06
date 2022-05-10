@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--Para dar medidas "responsive"-->
     <title>product-name</title><!--Titulo que se vera en la pestaña del navegador-->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--font stuff-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--font stuff-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--font stuff-->
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"><!--font stuff-->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"><!--font stuff-->
+ 
     
 
     <link rel="stylesheet" href="/css/normalize.css" /><!--conecta el archivo normalize.css con el home-->
@@ -20,17 +21,14 @@
     <link rel="stylesheet" href="/css/styles-laptop.css" />
   </head>
 <body>
-  <header class="header">
-    <nav>
+  <header>
+    <nav class="header">
       <img class=alcerLogo src="\images\logo.jpeg" alt="Alcer supermercado" />
       <p>lugar para barra de busqueda</p>
-    </nav>
-    <nav>
-        </div>
         <ul class="list">
           <li><a href="#">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
           <li><a href = "#" >Carrito <i class="fas fa-shopping-basket"></i></a></li>
-          <li><div class="burger-menu font-heading"><i class="fas fa-bars"></i>
+          <li><div class="burger-menu font-heading"><i class="fas fa-bars"></i></li>
         </ul>
     </nav>
   </header>
@@ -38,24 +36,25 @@
     <section class="product">    
       <h1>nombre completo del producto (kg/ml)</h1>
       <img class="productPrincipalImage" src=\images\Agua-Baja-En-Sodio-Glaciar-Con-Gas-15-L-1-240110.webp  alt="product-name" >
-      <nav>
+      <section class="secondaryImages">
         <img class="productSecondaryImage" src=\images\Agua-Baja-En-Sodio-Glaciar-Con-Gas-15-L-1-240110.webp  alt="product-name" >
         <img class="productSecondaryImage" src=\images\Agua-Baja-En-Sodio-Glaciar-Con-Gas-15-L-1-240110.webp  alt="product-name" >
         <img class="productSecondaryImage" src=\images\Agua-Baja-En-Sodio-Glaciar-Con-Gas-15-L-1-240110.webp  alt="product-name" >
-      </nav>
-      <h2>Precio</h2>
-      <h3>Oferta disponible</h3>
-      <h3>Agregar al carrito</h3>
+      </section>
+      <section class="price-discount">
+        <h2>Precio</h2>
+        <h3>Oferta disponible</h3>
+      </section>
+        <h3 class="addChart">Agregar al carrito</h3>
+      
+        
     </section>
     <section class="relatedProducts">
       <h2>Productos relacionados</h2>
-      <nav>
-        <ul>
+      <nav class="imagesOfRelatedProducts">
           <img class="relatedProductImage" src=\images\Gaseosa-Coca-Cola-Sin-Azucar-1-75lt-1-367450.webp alt="product-name" >
           <img class="relatedProductImage" src=\images\Gaseosa-Paso-De-Los-Toros-Pomelo-15l-1-248189.webp alt="product-name" > 
-        </ul>
       </nav>
-    </section>
     <footer>
       <section class="footer">
         <h4>Contacto</h4>
