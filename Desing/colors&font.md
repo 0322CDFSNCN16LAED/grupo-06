@@ -26,7 +26,7 @@ a color: black
 separaciones : solid #8b8888
 
 border-top: solid #cbc2c2
-
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 ## font
 Source Sans Pro
 Regular 400
