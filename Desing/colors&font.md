@@ -2,31 +2,30 @@
 
 ## Colors
 
-header background-color: #ffffff
+header background-color: #ffffff - ![#ffffff ](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-box-shadow: 0 2px 5px 2px rgba(70, 69, 69, 0.18)
+box-shadow: 0 2px 5px 2px rgba(70, 69, 69, 0.18) - ![rgba(70, 69, 69, 0.18)](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-main background-color: #f5f4f4
+main background-color: #f5f4f4 - ![#f5f4f4 ](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-footer background-color: #1A1A1A
-       color: #f5f4f4
+footer background-color: #1A1A1A - ![#1A1A1A ](https://via.placeholder.com/15/f03c15/000000?text=+)
+       color: #f5f4f4- ![#f5f4f4](https://via.placeholder.com/15/f03c15/000000?text=+)
 
 a color: black
 
 .price{
-    color :#044dac
+    color :#044dac - ![#044dac](https://via.placeholder.com/15/f03c15/000000?text=+)
 
 .discount{
-    color :#044dac
+    color :#044dac - ![#044dac](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-.addChart{
-    display: flex
-    background-color: #ffe16b
+.addChart
+    background-color: #ffe16b - ![#ffe16b](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-separaciones : solid #8b8888
+separaciones : solid #8b8888- ![#8b8888](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-border-top: solid #cbc2c2
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+border-top: solid #cbc2c2- ![#cbc2c2](https://via.placeholder.com/15/f03c15/000000?text=+)
+
 ## font
 Source Sans Pro
 Regular 400
