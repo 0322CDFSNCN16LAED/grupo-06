@@ -1,10 +1,8 @@
 
-@media (min-width: 769px) {
-    .product-title {
-      /* visibility: collapse; */
-      display: none;
-    }
-    .product {
-      box-shadow:inset;
-    }
+@media (min-width: 481px) {
+  .categorias{
+    text-align: right;
   }
+
+  
+}

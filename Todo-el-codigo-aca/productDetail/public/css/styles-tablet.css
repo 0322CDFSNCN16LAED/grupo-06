@@ -1,6 +1,7 @@
-@media (min-width: 481px) {
-    .product {
-        box-shadow:inset;
-      }
+@media (max-width: 481px) {
+    .categorias{
+      display: none;
+    }
+
     
 }
