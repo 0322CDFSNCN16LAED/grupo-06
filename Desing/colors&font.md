@@ -8,7 +8,7 @@ box-shadow: 0 2px 5px 2px rgba(70, 69, 69, 0.18)
 
 main background-color: #f5f4f4 
 
-footer background-color: #1A1A1A - ![#1A1A1A ](https://via.placeholder.com/1A1A1A /000000?text=+)
+footer background-color: #1A1A1A 
        color: #f5f4f4- ![#f5f4f4](https://via.placeholder.com/15/f5f4f4/000000?text=+)
 
 a color: black
