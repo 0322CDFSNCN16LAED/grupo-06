@@ -2,11 +2,11 @@
 
 ## Colors
 
-header background-color: #ffffff - ![#ffffff ](https://via.placeholder.com/15/ffffff /000000?text=+)
+header background-color: #ffffff 
 
-box-shadow: 0 2px 5px 2px rgba(70, 69, 69, 0.18) - ![rgba(70, 69, 69, 0.18)](https://via.placeholder.com/15/rgba(70, 69, 69, 0.18)/000000?text=+)
+box-shadow: 0 2px 5px 2px rgba(70, 69, 69, 0.18) 
 
-main background-color: #f5f4f4 - ![#f5f4f4 ](https://via.placeholder.com/15/f5f4f4 /000000?text=+)
+main background-color: #f5f4f4 
 
 footer background-color: #1A1A1A - ![#1A1A1A ](https://via.placeholder.com/1A1A1A /000000?text=+)
        color: #f5f4f4- ![#f5f4f4](https://via.placeholder.com/15/f5f4f4/000000?text=+)
