@@ -16,7 +16,9 @@ main{
     background-color: #f5f4f4;
 }
 body{
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-family: 'Radio Canada', sans-serif;
+    font-family: 'Roboto', sans-serif;
     
 }
 footer{
