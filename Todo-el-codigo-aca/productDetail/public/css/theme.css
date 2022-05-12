@@ -1,15 +1,48 @@
 header{
-    background-color: #ffffff;
     justify-content: space-between;
     box-shadow: 0 2px 5px 2px rgb(83 82 82 / 18%);
     width: 100%;
 }
 .header{
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
-    flex-wrap:nowrap;
-    box-shadow: 0 2px 5px 2px rgba(70, 69, 69, 0.18);
+    padding: 4%;
+    position: relative;
+    background-color: white;
+    box-shadow: 10px 5px 100px rgba(0, 0, 0, 0.332);;
+    z-index: -1;
+}
+.burger-menu{
+    font-size: x-large;
+}
 
+.fa-bars{
+    align-items: center;
+}
+
+.alcer-logo{
+    width: 40%;
+    justify-items: center;
+    margin: auto;
+    right: 25%;
+    left: 25%;
+    top: 15%;
+    position: absolute;
+}
+.space-header{
+    flex-grow: 2.5;
+}
+
+.fa-cart-shopping{
+    font-size: large;
+    padding: 2%;
+}
+
+.fa-user{
+    font-size: large;
+    padding: 2%;
 }
 main{
     margin-top: 1%;
@@ -29,24 +62,21 @@ h1{
     text-align: center;
     display: block;
     width: 90%;
-    box-shadow: 2px 2px 5px 2px rgba(70, 69, 69, 0.18);
-    margin: auto 
+   
+    margin: 5% 5% 5% 5%;
 }
 .alcerLogo{
     width: 30vw;
     margin: 2%;
 }
-
-
-
-
-
 ul{
     display: flex;
 }
 a{
-    color: black;
+    color: white;
     text-decoration: none;
+    width: 50%;
+    font-weight: bold;
 }
 .socialMediaList{
     padding: 0vw;
@@ -61,10 +91,6 @@ li{
     display: flex;
     justify-content: space-around;
 }
-
-
-
-
 
 .productPrincipalImage{
     display: block;
@@ -88,24 +114,25 @@ li{
 }
 .price{
     color :#044dac;
-    flex-wrap: wrap;
-    display: flex;
 
+    font-weight: bold;
+    
     margin: 0%;
 }
 .discount{
+    font-weight: bold;
     color :#044dac;
-    flex-wrap: wrap;
-    display: flex;
+
     margin: 0%;
 }
 .addChart{
-    display: flex;
-    background-color: #ffe16b;
-    margin-bottom: 3vh;
-    padding: 2%;
-    align-self: flex-end;
-    margin: 0%;
+    background-color: #32bb0f;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 1% 2%;
+    border-radius: 5px;
 }
 .relatedProducts{
     text-align: center;
