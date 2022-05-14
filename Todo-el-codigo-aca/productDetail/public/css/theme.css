@@ -44,6 +44,9 @@ header{
     font-size: large;
     padding: 2%;
 }
+.categorias{
+    justify-content: space-around;
+}
 main{
     margin-top: 1%;
     background-color: #f5f4f4;
@@ -58,12 +61,13 @@ footer{
     background-color: #1A1A1A;
     color: #f5f4f4;
 }
-h1{
+.productTitle {
     text-align: center;
     display: block;
-    width: 90%;
-   
+    padding: 4%;
     margin: 5% 5% 5% 5%;
+    font-size: 30px;
+    font-weight: bold;
 }
 .alcerLogo{
     width: 30vw;
@@ -107,32 +111,41 @@ li{
 .productSecondaryImage{
     width:20vw ;
 }
-.productDescription{
-    display: flex;
+.price-discount{
     justify-content: space-around;
     margin: 3%;
+    display: flex;
+    padding: 3%;
+    border-radius: 5px;
 }
 .price{
     color :#044dac;
-
+    display: flex;
     font-weight: bold;
-    
     margin: 0%;
+    font-size: 35px;
 }
 .discount{
     font-weight: bold;
     color :#044dac;
-
+    display: flex;
     margin: 0%;
+    font-size: 25px;
+    text-decoration: underline;
 }
 .addChart{
     background-color: #32bb0f;
-    border: none;
-    font-size: 20px;
+    font-size: 25px;
     color: #ffffff;
-    font-weight: bold;
-    padding: 1% 2%;
-    border-radius: 5px;
+    border-radius: 10px;
+    padding: 1%;
+    font-weight: 500  ;
+    display: block;
+    margin: auto;
+    margin-bottom: 3%;
+    width: 45%;
+    text-align:center;
+    
 }
 .relatedProducts{
     text-align: center;

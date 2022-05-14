@@ -2,14 +2,14 @@
 
 ## Colors
 
-header background-color: #ffffff 
+header background-color: #ffffff ![#ffffff ](https://via.placeholder.com/15/#1A1A1A/000000?text=+)
 
-box-shadow: 0 2px 5px 2px rgba(70, 69, 69, 0.18) 
+box-shadow: 0 2px 5px 2px rgba(70, 69, 69, 0.18) ![#1A1A1A](https://via.placeholder.com/15/#1A1A1A/000000?text=+)
 
-main background-color: #f5f4f4 
+main background-color: #f5f4f4 ![#1A1A1A](https://via.placeholder.com/15/#1A1A1A/000000?text=+)
 
-footer background-color: #1A1A1A 
-       color: #f5f4f4- ![#f5f4f4](https://via.placeholder.com/15/f5f4f4/000000?text=+)
+footer background-color: #1A1A1A ![#1A1A1A](https://via.placeholder.com/15/#1A1A1A/000000?text=+)
+       color: #f5f4f4- ![#f5f4f4](https://via.placeholder.com/15/#f5f4f4/000000?text=+)
 
 a color: black
 

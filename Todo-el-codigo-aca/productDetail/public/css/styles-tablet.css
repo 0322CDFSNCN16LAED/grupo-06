@@ -1,7 +1,26 @@
-@media (max-width: 481px) {
-    .categorias{
-      display: none;
-    }
+@media (min-width: 768px) {
 
+    .alcer-logo{
+        top: 10%;
+    }
+    .productPrincipalImage {
+    width: 60%;
+    }
+    .categorias{
+        margin-top: 4%;
+    }
+    .productPrincipalImage {
+        width: 60%;
+      }
+      .productSecondaryImage {
+        width: 15%;
+      }
+      .relatedProductImage {
+        width: 32vw;
     
-}
+    }
+      
+
+  
+      
+  }

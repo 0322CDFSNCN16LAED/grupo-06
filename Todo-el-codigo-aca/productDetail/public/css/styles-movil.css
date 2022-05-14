@@ -1,0 +1,15 @@
+@media (min-width: 0px) {
+  .categorias{
+    margin-top: 8%;
+    display: none;
+  }
+  .price{
+    font-size: 30px;
+  }
+  .discount{
+    font-size: 20px;
+  }
+  
+
+    
+}

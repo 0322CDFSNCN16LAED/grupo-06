@@ -26,6 +26,9 @@ Soy Manu Fuent Moreno. Tengo 26 años. Estudié comunicación, eso me llevó a c
 ## Referentes
 https://www.jumbo.com.ar/ -> Display de productos que podrian interesarte.
 https://supermercado.laanonimaonline.com/ -> Tarjeta simple del producto buscado.
+https://www.coto.com.ar/ -> Organizacion del header (desktop)
+https://diaonline.supermercadosdia.com.ar/ -> Distribucion de colores
+https://www.jumbo.com.ar/ -> Diseño del header (movil)
 
 
 ## Tablero de organización 
