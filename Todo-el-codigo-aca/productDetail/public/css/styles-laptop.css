@@ -8,9 +8,14 @@
   main{
     margin-top: 6%;
   }
+  .productTitle{
+    margin: 0%;
+  }
   .product{
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
+    float: right;
   }
   .productPrincipalImage{
     order: -1;
