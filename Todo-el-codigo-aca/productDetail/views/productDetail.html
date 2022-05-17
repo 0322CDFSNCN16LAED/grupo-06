@@ -43,30 +43,41 @@
       </ul>
     </header>
     <main>
-        <section class="product">    
-          <p class="productTitle">Agua baja en sodio con gas 1,5ml</p>
-          
+      <section class="productCard">
+        <section class="product"> 
+          <div>
+            <h1 class="firstProductTitle">Agua baja en sodio con gas 1,5 L</h1>
             <img class="productPrincipalImage" src=\images\Agua-Baja-En-Sodio-Glaciar-Con-Gas-15-L-1-240110.webp  alt="product-name" >
-          
-          <section class="secondaryImages">
+          </div>
+          <div>
+            <h1 class="secondProductTitle">Agua baja en sodio con gas 1,5 L</h1>
+            <section class="secondaryImages">
             <img class="productSecondaryImage" src=\images\Agua-Baja-En-Sodio-Glaciar-Con-Gas-15-L-1-240110.webp  alt="product-name" >
             <img class="productSecondaryImage" src=\images\Agua-Baja-En-Sodio-Glaciar-Con-Gas-15-L-1-240110.webp  alt="product-name" >
             <img class="productSecondaryImage" src=\images\Agua-Baja-En-Sodio-Glaciar-Con-Gas-15-L-1-240110.webp  alt="product-name" >
           </section>
           <section class="price-discount">
-            <div><p class="price">$ 139,99</p></div>
-            <div><p class="discount">10% off</p></div>
+            <p class="price">$ 139,99</p>
+            <p class="discount">10% off</p>
           </section>
-            <p class="addChart">Agregar al carrito</p>
+          <button class="addCart">Agregar al carrito</button>
+          </div>
         </section>
+      </section>
+
         <section class="relatedProducts">
           <h2>Productos relacionados</h2>
-          <nav class="imagesOfRelatedProducts">
+          <div class="relatedProductsScroll">
+            <button><i class="fas fa-long-arrow-alt-left"></i></button>
+            <nav class="imagesOfRelatedProducts">
               <img class="relatedProductImage" src=\images\Gaseosa-Coca-Cola-Sin-Azucar-1-75lt-1-367450.webp alt="product-name" >
-              <img class="relatedProductImage" src=\images\Gaseosa-Paso-De-Los-Toros-Pomelo-15l-1-248189.webp alt="product-name" >               
+              <img class="relatedProductImage" src=\images\Gaseosa-Paso-De-Los-Toros-Pomelo-15l-1-248189.webp alt="product-name" >
             </nav>
-      </main>
-      <footer>
+            <button><i class="fas fa-long-arrow-alt-right"></i></button>
+          </div>
+        </section>
+    </main>
+    <footer>
         <section class="footer">
           <h4>Contacto</h4>
             <nav class="contact">
@@ -84,6 +95,6 @@
               </ul>
             </nav>
         </section>
-      </footer>
+    </footer>
   </body>
 </html>

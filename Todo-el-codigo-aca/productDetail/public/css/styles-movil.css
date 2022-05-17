@@ -3,6 +3,9 @@
     margin-top: 8%;
     display: none;
   }
+  .secondProductTitle{
+    display: none;
+  }
   .price{
     font-size: 30px;
   }

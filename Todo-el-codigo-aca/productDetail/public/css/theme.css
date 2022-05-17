@@ -1,3 +1,6 @@
+*{
+    margin: 0%;
+}
 header{
     justify-content: space-between;
     box-shadow: 0 2px 5px 2px rgb(83 82 82 / 18%);
@@ -61,7 +64,15 @@ footer{
     background-color: #1A1A1A;
     color: #f5f4f4;
 }
-.productTitle {
+.firstProductTitle {
+    text-align: center;
+    display: block;
+    padding: 4%;
+    margin: 5% 5% 5% 5%;
+    font-size: 30px;
+    font-weight: bold;
+}
+.secondProductTitle {
     text-align: center;
     display: block;
     padding: 4%;
@@ -95,6 +106,8 @@ li{
     display: flex;
     justify-content: space-around;
 }
+
+
 
 .productPrincipalImage{
     display: block;
@@ -133,7 +146,7 @@ li{
     font-size: 25px;
     text-decoration: underline;
 }
-.addChart{
+.addCart{
     background-color: #32bb0f;
     font-size: 25px;
     color: #ffffff;
@@ -151,6 +164,18 @@ li{
     text-align: center;
     border-top: solid #8b8888;
 }
+.relatedProductsScroll{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.relatedProductsScroll i{
+    margin: 1%;
+}
+.relatedProductsScroll button{
+    margin: 2%; 
+}
+
 .relatedProduct{
     width: 90vw;
     display: flex;
@@ -163,7 +188,7 @@ li{
 }
 .relatedProductImage{
     width: 40vw;
-    margin: auto;
+    margin: 1%;
 }
 .footer{
     text-align: center;
