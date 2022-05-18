@@ -80,10 +80,6 @@ footer{
     font-size: 30px;
     font-weight: bold;
 }
-.alcerLogo{
-    width: 30vw;
-    margin: 2%;
-}
 ul{
     display: flex;
 }
@@ -163,6 +159,11 @@ li{
 .relatedProducts{
     text-align: center;
     border-top: solid #8b8888;
+    margin: auto;
+    width: 90%;
+}
+h2{
+    margin-top: 3%;
 }
 .relatedProductsScroll{
     display: flex;
@@ -171,37 +172,49 @@ li{
 }
 .relatedProductsScroll i{
     margin: 1%;
-}
-.relatedProductsScroll button{
-    margin: 2%; 
+    width: 100%;
 }
 
-.relatedProduct{
-    width: 90vw;
-    display: flex;
-    justify-content: space-around;
-}
-.imagesOfRelatedProducts{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 3vh;
-}
-.relatedProductImage{
-    width: 40vw;
-    margin: 1%;
-}
-.footer{
-    text-align: center;
-    border-top: solid #cbc2c2;
-}
-.contact{
-    display: box;
-    margin: auto;
-    padding: 0;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.socialMedia{
-    color: black;
-    text-decoration: none;
-}
+
+
+    .relatedProductCard{
+        margin: 3%;
+        background-color: #ffffff;
+        border-radius: 7%;
+        padding: 2%;
+        border: #d8d8d8;
+        box-shadow: 0 2px 5px 2px rgb(0 0 0 / 50%);
+    }
+    .imagesOfRelatedProducts{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 3vh;
+    }
+    .relatedProductImage{
+        width: 25vw;
+        margin: 1%;
+    }
+
+
+
+
+    .footer{
+        text-align: center;
+        border-top: solid #cbc2c2;
+    }
+    .contact{
+        display: box;
+        margin: auto;
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .alcerLogo
+    .socialMedia{
+        color: black;
+        text-decoration: none;
+    }
+    .alcerLogo{
+        width: 21vw;
+        margin: 2%;
+    }

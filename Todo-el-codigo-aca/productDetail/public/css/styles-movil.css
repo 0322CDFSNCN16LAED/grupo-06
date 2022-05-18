@@ -1,4 +1,4 @@
-@media (min-width: 0px) {
+@media (max-width: 768px) {
   .categorias{
     margin-top: 8%;
     display: none;
@@ -6,11 +6,29 @@
   .secondProductTitle{
     display: none;
   }
+  .header{
+    margin-bottom: 5%;
+  }
+  .product{
+    flex-direction: column;
+  }
+  .productPrincipalImage{
+    width: 60vw;
+    margin: auto;
+  }
   .price{
     font-size: 30px;
   }
   .discount{
     font-size: 20px;
+  }
+  .relatedProductsScroll{
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+  }
+  .relatedProductImage{
+    width: 50%;
   }
   
 

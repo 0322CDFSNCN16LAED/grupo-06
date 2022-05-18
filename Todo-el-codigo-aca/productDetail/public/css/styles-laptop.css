@@ -1,9 +1,13 @@
 @media (min-width: 1024px) {
+  .header{
+    padding: 1%;
+  }
   .alcer-logo{
       top: 5%;
+      width: 21%;
   }
   .categorias{
-    margin-top: 4%;
+    margin-top: 2%;
     display: block;
     display: flex;
   }
@@ -17,21 +21,26 @@
     display: block;
     width: 100%;
     margin: 3% 3% 3% 13%;
+    padding: 0%;
   }
   .productCard{
     width: 90%;
     background-color: #d8d8d8;
     margin: auto;
-  }
+}
+  
   .product{
-    display: flex;  
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+   
     
   }
   .productPrincipalImage{
-    order: -1;
-    width: 34vw;
+    width: 27vw;
     margin: 8% 0% 7% 8%;
-}
+
   }
   .productTitle {    
     display: block;
@@ -51,7 +60,7 @@
   }
   .relatedProducts h2{
     margin: 5%;
-  }
 
-    
+  }
+  
 }

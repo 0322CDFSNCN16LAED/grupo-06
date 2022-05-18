@@ -15,10 +15,16 @@
       .productSecondaryImage {
         width: 15%;
       }
-      .relatedProductImage {
-        width: 32vw;
-    
+    .relatedProductImage {
+            width: 11vw;
     }
+    .relatedProductsScroll {
+      flex-direction: ROW;
+      width: 100%;
+      margin: auto;
+  }
+  
+  
       
 
   
