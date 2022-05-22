@@ -1,6 +1,9 @@
 *{
     margin: 0%;
 }
+body{
+    background-color: #f5f4f4;
+}
 header{
     justify-content: space-between;
     box-shadow: 0 2px 5px 2px rgb(83 82 82 / 18%);
@@ -14,7 +17,7 @@ header{
     padding: 4%;
     position: relative;
     background-color: white;
-    box-shadow: 10px 5px 100px rgba(0, 0, 0, 0.332);;
+    box-shadow: 0 2px 5px 2px rgb(83 82 82 / 18%);
     z-index: -1;
 }
 .burger-menu{
@@ -143,7 +146,7 @@ li{
     text-decoration: underline;
 }
 .addCart{
-    background-color: #32bb0f;
+    background-color: #6cdb50;
     font-size: 25px;
     color: #ffffff;
     border-radius: 10px;
@@ -151,10 +154,11 @@ li{
     font-weight: 500  ;
     display: block;
     margin: auto;
-    margin-bottom: 3%;
-    width: 45%;
+    margin-bottom: 10%;
+    width: 80%;
     text-align:center;
-    
+    border: white;
+    border-radius: 3px;   
 }
 .relatedProducts{
     text-align: center;
@@ -200,7 +204,11 @@ h2{
 
     .footer{
         text-align: center;
-        border-top: solid #cbc2c2;
+        margin-top:3% ;
+        padding-top:3% ;
+    }
+    .footer p{
+        padding: 3%;
     }
     .contact{
         display: box;
@@ -209,12 +217,20 @@ h2{
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    .alcerLogo
-    .socialMedia{
-        color: black;
-        text-decoration: none;
-    }
     .alcerLogo{
         width: 21vw;
         margin: 2%;
+    }
+
+    .socialMedia{
+        display: flex;
+        padding: 3%;
+        justify-content: space-around;
+    }
+    .socialMedia button{
+        padding: 2%;
+        border-radius: 99%;
+        background-color: #8b8888;
+        border: #8b8888;
+        font-size: larger;
     }

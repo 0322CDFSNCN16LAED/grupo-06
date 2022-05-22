@@ -10,17 +10,16 @@
         margin-top: 4%;
     }
     .productPrincipalImage {
-        width: 60%;
+        width: 50%;
       }
-      .productSecondaryImage {
-        width: 15%;
+      .addCart{
+        width: 70%;
       }
-    .relatedProductImage {
-            width: 11vw;
-    }
+
+
     .relatedProductsScroll {
       flex-direction: ROW;
-      width: 100%;
+      width: 80%;
       margin: auto;
   }
   

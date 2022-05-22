@@ -13,8 +13,14 @@
     flex-direction: column;
   }
   .productPrincipalImage{
-    width: 60vw;
+    width: 50vw;
     margin: auto;
+  }
+  .secondaryImages{
+    display: none;
+  }
+  .price-discount{
+    margin: 3% 20% 5% 20%;
   }
   .price{
     font-size: 30px;
@@ -23,13 +29,17 @@
     font-size: 20px;
   }
   .relatedProductsScroll{
-    flex-direction: column;
-    width: 60%;
+  
+    width: 90%;
     margin: auto;
   }
   .relatedProductImage{
     width: 50%;
   }
+  .alcerLogo{
+    width: 40%;
+  }
+
   
 
     
