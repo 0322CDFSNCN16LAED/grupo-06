@@ -12,6 +12,7 @@
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" /> <!--iconos-->
     <link rel="stylesheet" href="/css/normalize.css" /><!--conecta el archivo normalize.css con el home-->
+    <link rel="stylesheet" href="/css/themePD.css">
     <link rel="stylesheet" href="/css/utils.css" /><!--conecta el archivo utils.css con el home-->
     <link rel="stylesheet" href="/css/theme.css" /><!--conecta el archivo theme.css con el home-->
     <link rel="stylesheet" href="/css/colors.css" />
@@ -20,25 +21,13 @@
 </head>
 <body>
     <header>
-        <div class="main-header-top-bar">
-            <a class="font-light-blue burger-menu font-medium">
-                <i class="fas fa-bars"></i></a>
-            <img class=alcer-logo src="\images\logo-borde.png" alt="Alcer supermercado" />
-            <div class="space-header"></div>
-            <i class="font-light-blue fa-solid fa-cart-shopping"></i>
-            <i class="font-light-blue fa-solid fa-user"></i>
-        </div>
-        <div class="search-container">
-        <div class="search-bar">
-            <input placeholder="Encontrá lo que estás buscando"></input>
-            <a href=#><button class="button-search"><i class="fa-solid fa-magnifying-glass"></i></button></a>
-        </div></div>
+        <%- include("partials/topBar")  %> 
     </header>
     <main>
         <div>Carrusel</div>
         <section>productos</section>
-        <a href="/product-name">PRODUCT NAME</a>
+        <a href="/producto">PRODUCT NAME</a>
     </main>
-    <footer>footer</footer>
+    <%- include("partials/footer")  %> 
 </body>
 </html>

@@ -26,14 +26,7 @@
   </head>
   <body>
     <header>
-      <div class="header">
-          <a class="font-light-blue burger-menu font-medium">
-              <i class="fas fa-bars"></i></a>
-              <img class=alcer-logo src="\images\logo-borde.png" alt="Alcer supermercado" />
-          <div class="space-header"></div>
-          <i class="font-light-blue fa-solid fa-cart-shopping"></i>
-          <i class="font-light-blue fa-solid fa-user"></i>
-      </div>
+      <%- include("partials/topBar")  %> 
       <ul class="categorias"> 
         <li>Carnes</li>
         <li>Quesos y fiambres</li>
@@ -83,22 +76,6 @@
         </div>
       </section>
     </main>
-    <footer>
-        <section class="footer">
-          <p><a href="#">¿Quienes somos?</a></p>
-          <p><a href="/">Volver a la Home</a></p>
-          <img class="alcerLogo" src="\images\logo-borde.png" alt="Alcer supermercado" />
-          <h4>Contacto</h4>
-            <nav class="contact">
-              <p>supermercadoalcer@gmail.com</p>
-              <p>1122334689</p>
-            </nav>
-            <nav class="socialMedia">
-              <button class="facebook"><i class="fa-brands fa-facebook"></i></i></button>
-              <button class="instagram"><i class="fa-brands fa-instagram"></i></button>
-              <button class="messenger"><i class="fa-brands fa-facebook-messenger"></i></button>
-            </nav>
-        </section>
-    </footer>
+    <%- include("partials/footer")  %> 
   </body>
 </html>

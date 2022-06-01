@@ -1,18 +1,17 @@
-const express = require("express")  //requerimos el paquete express
-const path = require ("path")  //path unifica las rutas dentro de los sistemas operatvos((direcciones))
+const express = require("express");  //requerimos el paquete express
+const app = express();
 
-const app = express()  //
-const publicPath = path.resolve(__dirname, "./public") //le indicamos a path que resuelva la siguiente ruta
-app.use(express.static(publicPath))  //usamos la funcion static de express, que recibe como parametro la ruta a la carpeta public
+const path = require ("path");  //path unifica las rutas dentro de los sistemas operatvos((direcciones))
+const publicPath = path.resolve(__dirname, "./public"); //le indicamos a path que resuelva la siguiente ruta
+
+const routes = require("./routes/main");
+
+app.use(express.static(publicPath));  //usamos la funcion static de express, que recibe como parametro la ruta a la carpeta public
+app.set("view engine", "ejs");
+
+const PORT = 3000;
+app.listen(PORT, () => console.log("Servidor ejecutándose en el puerto ",PORT));
 
 
-app.listen(3000, () => console.log("Servidor ejecutándose en el puerto 3000"));
+app.use("/",routes);
 
-
-app.get("/",(req,res)=>{
-    res.sendFile(path.resolve(__dirname, "./views/home.html"))
-})
-
-app.get("/product-name",(req,res)=>{
-    res.sendFile(path.resolve(__dirname, "./views/productDetail.html"))
-})
