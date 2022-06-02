@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+</head>
+<body>
+    <main class="bg-lightgrey p-8 w-90 m-center mt-15 mb-15">
+        <form action="" class="formulario">
+            <div class="">
+                <label for="nombreApellido">
+                    <input class="input-general" type="text" name="nombreApellido" placeholder="Nombre y apellido">
+                </label>
+                <p class="mensaje-error">* Dato incorrecto</p>
+            </div>
+            <div class="">
+                <label for="usuario">
+                    <input class="input-general" type="text" name="usuario" placeholder="Nombre de usuario">
+                </label>
+                <p class="mensaje-error">* Dato incorrecto</p>
+            </div>
+            <h2 class="mb-10">Fecha de nacimiento</h2>
+            <div class="">
+                <label for="fechaNacimiento">
+                    <input class="input-general" type="date" name="fechaNacimiento" placeholder="Fecha de nacimiento">
+                </label>
+                <p class="mensaje-error">* Dato incorrecto</p>
+            </div>
+            <div class="">
+                <label for="domicilio">
+                    <input class="input-general" type="text" name="domicilio" placeholder="Domicilio">
+                </label>
+                <p class="mensaje-error">* Dato incorrecto</p>
+            </div>
+            <h2 class="mb-10">Tipo de usuario</h2>
+            <div class="">
+                <select class="input-general" name="tipoUsuario" id="tipoUsuario">
+                    <option value="vendedor">Quiero vender</option>
+                    <option value="comprador">Quiero comprar</option>
+                </select>
+            </div>
+            <h2 class="mb-10">Intereses</h2>
+            <div class="mb-10">
+                <label for="intereses"><input type="checkbox" value="electro">Electro</label>
+            </div>
+            <div class="mb-10">
+                <label for="intereses"><input type="checkbox" value="moda">Moda</label>
+            </div>
+            <div class="mb-10">
+                <label for="intereses"><input type="checkbox" value="hogar">Hogar</label>
+            </div>
+            <div class="mb-10">
+                <label for="intereses"><input type="checkbox" value="jugueteria">Juguetería</label>
+            </div>
+            <div class="mb-10">
+                <label for="intereses"><input type="checkbox" value="vidaSana">Vida sana</label>
+            </div>
+            <div class="">
+                <label for="fotoUsuario">
+                    <input class="input-file" type="file" name="fotoUsuario">
+                </label>
+            </div>
+            <div class="">
+                <label for="contrasena">
+                    <input class="input-general" type="password" name="contrasena" placeholder="Contraseña">
+                </label>
+                <p class="mensaje-error">* Dato incorrecto</p>
+            </div>
+            <div class="">
+                <label for="confirmaContrasena">
+                    <input class="input-general" type="password" name="confirmaContrasena"
+                        placeholder="Confirmar contraseña">
+                </label>
+                <p class="mensaje-error">* Dato incorrecto</p>
+            </div>
+            <div class="grupo-botones-register">
+                <button class="botones-register" type="submit">Enviar</button>
+                <button class="botones-register" type="reset">Borrar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
