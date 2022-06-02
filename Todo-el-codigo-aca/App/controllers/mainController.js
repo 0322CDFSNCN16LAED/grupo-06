@@ -11,5 +11,9 @@ module.exports = {
 
     cart : (req,res) =>{
         res.render("productCart");
+    },
+
+    register: (req, res) => {
+        res.render("register");
     }
 };
