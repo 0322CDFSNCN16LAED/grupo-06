@@ -198,71 +198,131 @@ li{
     margin: auto;
     width: 90%;
 }
+
 h2{
     margin-top: 3%;
 }
+
 .relatedProductsScroll{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 .relatedProductsScroll i{
     margin: 1%;
     width: 100%;
 }
 
+.relatedProductCard{
+    margin: 3%;
+    background-color: #ffffff;
+    border-radius: 7%;
+    padding: 2%;
+    border: #d8d8d8;
+    box-shadow: 0 2px 5px 2px rgb(0 0 0 / 50%);
+}
 
+.imagesOfRelatedProducts{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3vh;
+}
 
-    .relatedProductCard{
-        margin: 3%;
-        background-color: #ffffff;
-        border-radius: 7%;
-        padding: 2%;
-        border: #d8d8d8;
-        box-shadow: 0 2px 5px 2px rgb(0 0 0 / 50%);
-    }
-    .imagesOfRelatedProducts{
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 3vh;
-    }
-    .relatedProductImage{
-        width: 25vw;
-        margin: 1%;
-    }
+.relatedProductImage{
+    width: 25vw;
+    margin: 1%;
+}
 
+ /* *********** FOOTER ***********  */
 
+.footer{
+    text-align: center;
+    margin-top:3% ;
+    padding-top:3% ;
+}
 
+.footer p{
+    padding: 3%;
+}
 
-    .footer{
-        text-align: center;
-        margin-top:3% ;
-        padding-top:3% ;
-    }
-    .footer p{
-        padding: 3%;
-    }
-    .contact{
-        display: box;
-        margin: auto;
-        padding: 0;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .alcerLogo{
-        width: 21vw;
-        margin: 2%;
-    }
+.contact{
+    display: box;
+    margin: auto;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
-    .socialMedia{
-        display: flex;
-        padding: 3%;
-        justify-content: space-around;
-    }
-    .socialMedia button{
-        padding: 2%;
-        border-radius: 99%;
-        background-color: #8b8888;
-        border: #8b8888;
-        font-size: larger;
-    }
+.alcerLogo{
+    width: 21vw;
+    margin: 2%;
+}
+
+.socialMedia{
+    display: flex;
+    padding: 3%;
+    justify-content: space-around;
+}
+
+.socialMedia button{
+    border-radius: 50%;
+    background-color: #8b8888;
+    border: #8b8888;
+    font-size: larger;
+}
+
+/* *********** TARJETAS DE HOME ***********  */
+
+section h2{
+    margin: 3%;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    border: 1px rgba(0, 0, 0, 0.188) solid;
+    border-radius: 10px;
+    width: 160px;
+    margin: 4%;
+    overflow: hidden;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.product-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 3%;
+    height: 103px;
+}
+
+.product-name{
+    color: black;
+    font-size: 16px;
+    margin: 1.5px;
+
+}
+
+.product-description{
+    color: black;
+    font-size: 12px;
+    margin: 1.5px;
+    line-height: 11px;
+
+}
+
+.product-price{
+    color: #1259c3;
+    margin: 1.5px;
+    text-align: end;
+
+}
