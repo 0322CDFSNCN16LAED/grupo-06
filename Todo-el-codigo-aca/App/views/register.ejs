@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>register</title>
+    <%- include("partials/head") %>
+    <title>Registro</title>
 </head>
 <body>
     <main class="bg-lightgrey p-8 w-90 m-center mt-15 mb-15">
@@ -33,34 +31,6 @@
                     <input class="input-general" type="text" name="domicilio" placeholder="Domicilio">
                 </label>
                 <p class="mensaje-error">* Dato incorrecto</p>
-            </div>
-            <h2 class="mb-10">Tipo de usuario</h2>
-            <div class="">
-                <select class="input-general" name="tipoUsuario" id="tipoUsuario">
-                    <option value="vendedor">Quiero vender</option>
-                    <option value="comprador">Quiero comprar</option>
-                </select>
-            </div>
-            <h2 class="mb-10">Intereses</h2>
-            <div class="mb-10">
-                <label for="intereses"><input type="checkbox" value="electro">Electro</label>
-            </div>
-            <div class="mb-10">
-                <label for="intereses"><input type="checkbox" value="moda">Moda</label>
-            </div>
-            <div class="mb-10">
-                <label for="intereses"><input type="checkbox" value="hogar">Hogar</label>
-            </div>
-            <div class="mb-10">
-                <label for="intereses"><input type="checkbox" value="jugueteria">Juguetería</label>
-            </div>
-            <div class="mb-10">
-                <label for="intereses"><input type="checkbox" value="vidaSana">Vida sana</label>
-            </div>
-            <div class="">
-                <label for="fotoUsuario">
-                    <input class="input-file" type="file" name="fotoUsuario">
-                </label>
             </div>
             <div class="">
                 <label for="contrasena">
