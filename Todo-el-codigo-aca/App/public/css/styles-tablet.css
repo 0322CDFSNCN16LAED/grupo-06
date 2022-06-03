@@ -35,4 +35,11 @@
     margin: 15px 20px;
   }
 
+  /* FORMULARIOS */
+
+  .formulario {
+    padding: 64px 128px;
+    background-color: #fff;
+  }
+
 }
