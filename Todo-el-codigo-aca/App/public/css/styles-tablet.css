@@ -38,7 +38,8 @@
   /* FORMULARIOS */
 
   .formulario {
-    padding: 64px 128px;
+    padding: 64px 64px;
+    margin: 12px 64px;
     background-color: #fff;
   }
 

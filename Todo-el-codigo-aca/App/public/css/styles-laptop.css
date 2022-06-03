@@ -63,4 +63,11 @@
 
   }
   
+  /* FORMULARIOS */
+
+  .formulario {
+    padding: 64px 128px;
+    margin: 12px 256px;
+    background-color: #fff;
+  }
 }
