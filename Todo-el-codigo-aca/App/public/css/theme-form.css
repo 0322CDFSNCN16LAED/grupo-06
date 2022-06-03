@@ -34,17 +34,6 @@
     color: #FFFFFF;
 }
 
-.fondo-formulario {
-    width: 100%;
-    background: #FFFFFF;
-    border-radius: 32px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-}
-
-
 .input-general {
     width: 100%;
     height: auto;
