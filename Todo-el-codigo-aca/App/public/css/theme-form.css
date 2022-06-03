@@ -10,7 +10,9 @@
 
 .formulario {
     max-width: 100%;
-    border-radius: 6px;
+    border-radius: 32px;
+    padding: 32px 32px;
+    background-color: #FFF;
 }
 
 .grupo-titulo-form {
