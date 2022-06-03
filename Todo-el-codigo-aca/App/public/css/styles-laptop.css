@@ -1,4 +1,4 @@
-@media (min-width: 1024px) {
+@media (min-width: 769px) {
   .header{
     padding: 1%;
   }
@@ -63,4 +63,11 @@
 
   }
   
+  /* FORMULARIOS */
+
+  .formulario {
+    padding: 64px 128px;
+    margin: 12px 256px;
+    background-color: #fff;
+  }
 }

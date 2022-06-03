@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <%- include("partials/head") %>
     <link rel="stylesheet" href="/css/theme-form.css" /> <!--conecta el archivo theme.form.css con el home-->
+    <%- include("partials/head") %>
     <title>Registro</title>
 </head>
 <body>
     <main class="bg-lightgrey p-8 w-90 m-center mt-15 mb-15">
-        <form action="" class="formulario">
-            <div class="titulo-form-fondo mb-15">
+        <div class="grupo-titulo-form">
+            <div class="titulo-form-fondo mb-15 ml">
                 <h1 class="titulo-form-texto">Registro</h1>
             </div>
+        </div>
+        <form action="" class="formulario">
             <div class="">
                 <label for="usuario">
                     <input class="input-general" type="email" name="usuario" placeholder="Ingrese su email">
