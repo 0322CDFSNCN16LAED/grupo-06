@@ -29,6 +29,8 @@ body{
 
 .alcer-logo{
     width: 40%;
+    max-width: 228.8px;
+    max-height: 89.66px;
     justify-items: center;
     margin: auto;
     right: 25%;

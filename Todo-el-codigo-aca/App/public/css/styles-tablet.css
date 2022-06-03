@@ -1,31 +1,38 @@
 @media (min-width: 768px) {
 
-    .alcer-logo{
-        top: 10%;
-    }
-    .productPrincipalImage {
+  .alcer-logo{
+    top: 10%;
+  }
+  
+  .productPrincipalImage {
     width: 60%;
-    }
-    .categorias{
-        margin-top: 4%;
-    }
-    .productPrincipalImage {
-        width: 50%;
-      }
-      .addCart{
-        width: 70%;
-      }
-
-
-    .relatedProductsScroll {
-      flex-direction: ROW;
-      width: 80%;
-      margin: auto;
   }
   
-  
-      
-
-  
-      
+  .categorias{
+      margin-top: 4%;
   }
+  
+  .productPrincipalImage {
+    width: 50%;
+  }
+  
+  .addCart{
+    width: 70%;
+  }
+
+  .relatedProductsScroll {
+    flex-direction: ROW;
+    width: 80%;
+    margin: auto;
+  }
+
+  .space-topbar{
+    height: 120px;
+  }
+
+  .search-container{
+    padding: 0px;
+    margin: 15px 20px;
+  }
+
+}
