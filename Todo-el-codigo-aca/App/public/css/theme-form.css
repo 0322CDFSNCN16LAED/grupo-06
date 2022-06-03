@@ -2,35 +2,48 @@
 *** ESTILOS PARA FORMULARIOS ***
 */
 
-//GENERALES//
+/*GENERALES*/
 
-h1 {
 
-}
 
-//ESPECÍFICOS//
+/*ESPECÍFICOS*/
 
 .formulario {
     max-width: 100%;
     border-radius: 6px;
 }
 
+.grupo-titulo-form {
+    display: flex;
+    justify-content: center;
+}
+
 .titulo-form-fondo {
-    background: #ED7E7E;
+    width: 250px;
+    background: #1259c3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 32px;
-    display: flex;
-    align-items: center;
-    text-align: center;
 }
 
 .titulo-form-texto {
     width: 100%;
+    text-align: center;
     font-weight: 700;
     font-size: 21px;
     line-height: 25px;
     color: #FFFFFF;
 }
+
+.fondo-formulario {
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .input-general {
     width: 100%;

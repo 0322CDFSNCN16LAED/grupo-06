@@ -8,31 +8,35 @@
 <body>
     <main class="bg-lightgrey p-8 w-90 m-center mt-15 mb-15">
         <form action="" class="formulario">
-            <div class="titulo-form-fondo mb-15">
-                <h1 class="titulo-form-texto">Registro</h1>
+            <div class="grupo-titulo-form">
+                <div class="titulo-form-fondo mb-15">
+                    <h1 class="titulo-form-texto">Registro</h1>
+                </div>
             </div>
-            <div class="">
-                <label for="usuario">
-                    <input class="input-general" type="email" name="usuario" placeholder="Ingrese su email">
-                </label>
-                <p class="mensaje-error">* Dato incorrecto</p>
-            </div>
-            <div class="">
-                <label for="contrasena">
-                    <input class="input-general" type="password" name="contrasena" placeholder="Contraseña">
-                </label>
-                <p class="mensaje-error">* Dato incorrecto</p>
-            </div>
-            <div class="">
-                <label for="confirmaContrasena">
-                    <input class="input-general" type="password" name="confirmaContrasena"
-                        placeholder="Confirmar contraseña">
-                </label>
-                <p class="mensaje-error">* Dato incorrecto</p>
-            </div>
-            <div class="grupo-botones-register">
-                <button class="botones-register" type="submit">Enviar</button>
-                <button class="botones-register" type="reset">Borrar</button>
+            <div class="fondo-formulario">
+                <div class="">
+                    <label for="usuario">
+                        <input class="input-general" type="email" name="usuario" placeholder="Ingrese su email">
+                    </label>
+                    <p class="mensaje-error">* Dato incorrecto</p>
+                </div>
+                <div class="">
+                    <label for="contrasena">
+                        <input class="input-general" type="password" name="contrasena" placeholder="Contraseña">
+                    </label>
+                    <p class="mensaje-error">* Dato incorrecto</p>
+                </div>
+                <div class="">
+                    <label for="confirmaContrasena">
+                        <input class="input-general" type="password" name="confirmaContrasena"
+                            placeholder="Confirmar contraseña">
+                    </label>
+                    <p class="mensaje-error">* Dato incorrecto</p>
+                </div>
+                <div class="grupo-botones-register">
+                    <button class="botones-register" type="submit">Enviar</button>
+                    <button class="botones-register" type="reset">Borrar</button>
+                </div>
             </div>
         </form>
     </main>
