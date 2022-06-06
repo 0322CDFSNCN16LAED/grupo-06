@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/theme-form.css" /> <!--conecta el archivo theme.form.css con el home-->
+    <%- include("partials/head") %>
+    <title>Ingresar</title>
+</head>
+<body>
+    <main class="bg-lightgrey p-8 w-90 m-center mt-15 mb-15">
+        <form action="" class="formulario">
+            <div class="grupo-titulo-form">
+                <div class="titulo-form-fondo mb-15 ml">
+                    <h1 class="titulo-form-texto">Ingresar</h1>
+                </div>
+            </div>
+            <div class="input-icons">
+                <i class="fa-solid fa-envelope"></i>
+                <label for="usuario">
+                    <input class="input-general" type="email" name="usuario" placeholder="Ingrese su email">
+                </label>
+                <p class="mensaje-error">* Dato incorrecto</p>
+            </div>
+            <div class="input-icons">
+                <i class="fa-solid fa-lock"></i>
+                <label for="contrasena">
+                    <input class="input-general" type="password" name="contrasena" placeholder="Contraseña">
+                </label>
+                <p class="mensaje-error">* Dato incorrecto</p>
+            </div>
+            <div class="grupo-botones-formulario">
+                <button class="boton-enviar" type="submit">Enviar</button>
+                <button class="botones-formulario" type="reset">Borrar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
