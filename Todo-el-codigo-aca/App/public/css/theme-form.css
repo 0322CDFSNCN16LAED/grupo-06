@@ -49,6 +49,23 @@
     box-shadow: 0px 0px 3px #666;
 }
 
+.input-general::placeholder {
+    padding-left: 28px;
+}
+
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.input-icons i {
+    position: absolute;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 6px;
+    color: #1259c3;
+}
+
 .input-file {
     width: 100%;
     height: auto;
@@ -70,7 +87,8 @@
     background-color: #1259c3;
     color: #FFF;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .boton-enviar {
@@ -80,7 +98,8 @@
     background-color: green;
     color: #FFF;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .grupo-botones-formulario {
