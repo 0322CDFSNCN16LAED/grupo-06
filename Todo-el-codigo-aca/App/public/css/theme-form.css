@@ -50,25 +50,30 @@
     box-shadow: 0px 0px 3px #666;
 }
 
-.input-with-icon {
-    width: 100%;
-    height: auto;
+.input-icon-container {
+    align-items: center;
     margin-bottom: 10px;
-    padding: 5px;
-    font-size: 16px;
     border: none;
     border-radius: 5px;
     background-color: #FFF;
     box-shadow: 0px 0px 3px #666;
 }
 
-.input-with-icon::placeholder {
-    padding-left: 28px;
+.input-icon-container i {
+    margin: 10px;
+    color: #1259c3;
 }
 
-.input-icons {
+.input-with-icon {
     width: 100%;
-    margin-bottom: 10px;
+    height: auto;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+}
+
+.input-icon-container {
+    display: flex;
 }
 
 .input-icons i {
