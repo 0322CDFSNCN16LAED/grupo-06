@@ -1,4 +1,5 @@
 const productos = require("../dataBaseProduct");
+const carrito = require("../dataCarrito");
 
 module.exports = {
     home : (req, res)=>{
@@ -10,7 +11,7 @@ module.exports = {
     },
 
     cart : (req,res) =>{
-        res.render("productCart");
+        res.render("productCart",{"carrito":carrito});
     },
 
     register: (req, res) => {
