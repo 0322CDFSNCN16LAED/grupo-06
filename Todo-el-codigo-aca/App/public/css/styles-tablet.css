@@ -27,7 +27,7 @@
   }
 
   .space-topbar{
-    height: 120px;
+    height: 100px;
   }
 
   .search-container{
@@ -43,4 +43,16 @@
     background-color: #fff;
   }
 
+  .main-header-top-bar{
+    padding: 2%;
+  }
+
+  .main-header-top-bar i{
+    font-size: 24px;
+  }
+
+  .products{
+    width: auto;
+    margin: 0px 120px;
+  }
 }
