@@ -7,34 +7,50 @@
 </head>
 <body>
     <main class="bg-lightgrey p-8 w-90 m-center mt-15 mb-15">
-        <div class="grupo-titulo-form">
-            <div class="titulo-form-fondo mb-15 ml">
-                <h1 class="titulo-form-texto">Registro</h1>
-            </div>
-        </div>
         <form action="" class="formulario">
-            <div class="">
-                <label for="usuario">
-                    <input class="input-general" type="email" name="usuario" placeholder="Ingrese su email">
-                </label>
-                <p class="mensaje-error">* Dato incorrecto</p>
+            <div class="grupo-titulo-form">
+                <div class="titulo-form-fondo mb-15 ml">
+                    <h1 class="titulo-form-texto">Registro</h1>
+                </div>
             </div>
-            <div class="">
-                <label for="contrasena">
-                    <input class="input-general" type="password" name="contrasena" placeholder="Contraseña">
-                </label>
-                <p class="mensaje-error">* Dato incorrecto</p>
+            <h2>Datos de la cuenta</h2>
+            <div class="input-icon-container">
+                <i class="fa-solid fa-envelope"></i>
+                <input class="input-with-icon" type="email" name="usuario" placeholder="Ingrese su email">
             </div>
-            <div class="">
-                <label for="confirmaContrasena">
-                    <input class="input-general" type="password" name="confirmaContrasena"
-                        placeholder="Confirmar contraseña">
-                </label>
-                <p class="mensaje-error">* Dato incorrecto</p>
+            <p class="mensaje-error">* Dato incorrecto</p>
+            <div class="input-icon-container">
+                <i class="fa-solid fa-lock"></i>
+                <input class="input-with-icon" type="password" name="contrasena" placeholder="Contraseña nueva">
             </div>
-            <div class="grupo-botones-register">
-                <button class="botones-register" type="submit">Enviar</button>
-                <button class="botones-register" type="reset">Borrar</button>
+            <p class="mensaje-error">* Dato incorrecto</p>
+            <div class="input-icon-container">
+                <i class="fa-solid fa-lock"></i>
+                    <input class="input-with-icon" type="password" name="confirmaContrasena" placeholder="Confirmar contraseña">
+            </div>
+            <p class="mensaje-error">* Dato incorrecto</p>
+            <h2>Datos personales</h2>
+            <div class="">
+                <label for="nombres">
+                    <input class="input-general" type="text" name="nombres" placeholder="Ingrese su nombre">
+                </label>
+            </div>
+            <p class="mensaje-error">* Dato incorrecto</p>
+            <div class="">
+                <label for="apellidos">
+                    <input class="input-general" type="text" name="apellidos" placeholder="Ingrese su apellido">
+                </label>
+            </div>
+            <p class="mensaje-error">* Dato incorrecto</p>
+            <div class="">
+                <label for="fechaNacimiento">Seleccione su fecha de nacimiento:
+                    <input class="input-general mt-10" type="date" name="fechaNacimiento">
+                </label>
+            </div>
+            <p class="mensaje-error">* Dato incorrecto</p>
+            <div class="grupo-botones-formulario">
+                <button class="boton-enviar" type="submit">Enviar</button>
+                <button class="botones-formulario" type="reset">Borrar</button>
             </div>
         </form>
     </main>
