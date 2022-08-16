@@ -28,15 +28,12 @@ CREATE TABLE `alcer_db`.`products` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `email` VARCHAR(255) NOT NULL,
   `password` VARCHAR(255) NOT NULL,
+  `category` VARCHAR(255) NOT NULL,
   `name` VARCHAR(255) NOT NULL,
   `last_name` VARCHAR(255) NOT NULL,
-  `birth_date` TIME NOT NULL,
+  `birth_date` DATE NOT NULL,
   `profil_photo` VARCHAR(500) NULL,
   `deleted_at` DATETIME NULL,
-  PRIMARY KEY (`id`));
-  CREATE TABLE `alcer_db`.`users_categories` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(255) NOT NULL,
   PRIMARY KEY (`id`));
   
 ALTER TABLE `alcer_db`.`products` 
@@ -73,15 +70,5 @@ ADD CONSTRAINT `fk_od_orders`
 ADD CONSTRAINT `fk_or_products`
   FOREIGN KEY (`product_id`)
   REFERENCES `alcer_db`.`products` (`id`)
-  ON DELETE NO ACTION
-  ON UPDATE NO ACTION;
-
-ALTER TABLE `alcer_db`.`users` 
-ADD COLUMN `category_id` INT NOT NULL AFTER `password`,
-ADD INDEX `fk_users_users-categories_idx` (`category_id` ASC) VISIBLE;
-ALTER TABLE `alcer_db`.`users` 
-ADD CONSTRAINT `fk_users_users-categories`
-  FOREIGN KEY (`category_id`)
-  REFERENCES `alcer_db`.`users_categories` (`id`)
   ON DELETE NO ACTION
   ON UPDATE NO ACTION;
