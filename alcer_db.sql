@@ -36,7 +36,7 @@ CREATE TABLE `alcer_db`.`products` (
   `deleted_at` DATETIME NULL,
   PRIMARY KEY (`id`));
   
-ALTER TABLE `alcer_db`.`products` 
+ALTER TABLE `alcer_db`.`products`
 ADD COLUMN `category_id` INT NULL AFTER `product_photo`,
 ADD INDEX `fk_products_category_idx` (`category_id` ASC) VISIBLE;
 ALTER TABLE `alcer_db`.`products` 
