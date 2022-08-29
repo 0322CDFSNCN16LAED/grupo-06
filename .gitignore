@@ -104,4 +104,4 @@ dist
 .tern-port
 
 # Config JS
-alcer_db.sql
+*config/
