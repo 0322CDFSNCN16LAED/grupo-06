@@ -88,7 +88,7 @@ CREATE TABLE `products` (
   `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `description` varchar(500) DEFAULT NULL,
-  `price` int DEFAULT '0',
+  `price` decimal(10,2) DEFAULT '0.00',
   `product_photo` varchar(500) DEFAULT NULL,
   `category_id` int DEFAULT NULL,
   `special_offer` tinyint DEFAULT '0',
@@ -98,7 +98,7 @@ CREATE TABLE `products` (
   PRIMARY KEY (`id`),
   KEY `fk_products_category_idx` (`category_id`),
   CONSTRAINT `fk_products_category` FOREIGN KEY (`category_id`) REFERENCES `products_categories` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=76 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=77 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -107,7 +107,7 @@ CREATE TABLE `products` (
 
 LOCK TABLES `products` WRITE;
 /*!40000 ALTER TABLE `products` DISABLE KEYS */;
-INSERT INTO `products` VALUES (1,'Agua con gas','Agua con gas Baja en Sodio Glaciar 1.5 L',140,'Agua-Baja-En-Sodio-Glaciar-Con-Gas-15-L-1-240110.webp',1,1,'2022-08-26 21:54:43','2022-08-26 21:54:43',NULL),(2,'Chocolate Milka','Chocolate con leche Milka 150 grs',120,'Chocolate-Milka-Con-Leche-150-Gr-1-26505.webp',2,0,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(3,'Limpiavidrios Mr Musculo','Repuesto Mr Musculo Limpiavirios 900ml',89,'Limpiador-Vidrios-Y-Multiuso-Doy-Pack-Mr-Musculo-900-Ml-1-249086.webp',3,0,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(4,'Leche La Serenisima Zero','Leche larga vida zero lactosa La Serenísima 1L ',240,'Leche-Ls-Uat-Pa-Desc-Zero-Lact-For-Vit-1-859051.webp',4,0,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(5,'Paso de los Toros Pomelo','Gaseosa Paso de los toros Pomelo 1.5Lts',136,'Gaseosa-Paso-De-Los-Toros-Pomelo-15l-1-248189.webp',1,1,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(6,'Carne Picada','Carne Picada Especial ALCER',223,'Picada-Especial-1-861724.webp',4,0,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(7,'Coca-Cola Sin Azúcar 1.75Lts','Gaseosa marca Coca-Cola, Sin Azúcar. 1,75lt',223,'Gaseosa-Coca-Cola-Sin-Azucar-1-75lt-1-367450.webp',1,0,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(8,'DogChow Pollo 100gr','Alimento Para Perros marca Dog-Chow sabor Pollo. Envase 100grs',356,'img-1656903138829-DogChow Pollo 100gr.webp',5,1,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(9,'Ayudín Clásica','Lavandina clásica marca Ayudín. Envase de 2Lts',475,'img-1656903217106-Ayudín Clásica.webp',3,1,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(10,'Antitranspirante Rexona Fútbol','Desodorante Antitranspirante Rexona FútbolFanatics En Aerosol 150ml',400,'img-1656903272269-Antitranspirante Rexona Fútbol.webp',3,0,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(11,'Antitranspirante Rexona Invisible','Desodorante Antitranspirante Rexona Invisible En Aerosol 150ml',420,'img-1656903324076-Antitranspirante Rexona Invisible.webp',3,1,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(12,'Pure de Tomate Salsati','Pure De Tomate marca Salsati 520gr',560,'img-1656903373286-Pure de Tomate Salsati.webp',5,0,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(13,'Lechuga Criolla','Lechuga Criolla. Precio por Kilo',60,'img-1656903422208-Lechuga Criolla.webp',5,0,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(14,'LimpiaVidrios CIF','Limpiador de Vidrios Cif Bio Original 375gr',359,'img-1656903473984-LimpiaVidrios CIF.webp',2,1,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(15,'Ades Manzana','Jugo Ades-Soja sabor Manzana 1-Lt',426,'img-1656903510401-Ades Manzana.webp',1,0,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(16,'Papas Mc Cain Tradicionales','Papas Tradicional Mc Cain Bsa 720 Grm',236,'img-1660694127063-Papas Mc Cain Tradicionales.jpg',2,0,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL);
+INSERT INTO `products` VALUES (1,'Agua con gas','Agua con gas Baja en Sodio Glaciar 1.5 L',140.00,'Agua-Baja-En-Sodio-Glaciar-Con-Gas-15-L-1-240110.webp',1,1,'2022-08-26 21:54:43','2022-08-26 21:54:43',NULL),(2,'Chocolate Milka','Chocolate con leche Milka 150 grs',119.99,'Chocolate-Milka-Con-Leche-150-Gr-1-26505.webp',2,0,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(3,'Limpiavidrios Mr Musculo','Repuesto Mr Musculo Limpiavirios 900ml',89.50,'Limpiador-Vidrios-Y-Multiuso-Doy-Pack-Mr-Musculo-900-Ml-1-249086.webp',3,0,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(4,'Leche La Serenisima Zero','Leche larga vida zero lactosa La Serenísima 1L ',240.00,'Leche-Ls-Uat-Pa-Desc-Zero-Lact-For-Vit-1-859051.webp',4,0,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(5,'Paso de los Toros Pomelo','Gaseosa Paso de los toros Pomelo 1.5Lts',136.00,'Gaseosa-Paso-De-Los-Toros-Pomelo-15l-1-248189.webp',1,1,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(6,'Carne Picada','Carne Picada Especial ALCER',223.75,'Picada-Especial-1-861724.webp',4,0,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(7,'Coca-Cola Sin Azúcar 1.75Lts','Gaseosa marca Coca-Cola, Sin Azúcar. 1,75lt',223.99,'Gaseosa-Coca-Cola-Sin-Azucar-1-75lt-1-367450.webp',1,0,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(8,'DogChow Pollo 100gr','Alimento Para Perros marca Dog-Chow sabor Pollo. Envase 100grs',356.00,'img-1656903138829-DogChow Pollo 100gr.webp',5,1,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(9,'Ayudín Clásica','Lavandina clásica marca Ayudín. Envase de 2Lts',475.00,'img-1656903217106-Ayudín Clásica.webp',3,1,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(10,'Antitranspirante Rexona Fútbol','Desodorante Antitranspirante Rexona FútbolFanatics En Aerosol 150ml',400.20,'img-1656903272269-Antitranspirante Rexona Fútbol.webp',3,0,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(11,'Antitranspirante Rexona Invisible','Desodorante Antitranspirante Rexona Invisible En Aerosol 150ml',420.00,'img-1656903324076-Antitranspirante Rexona Invisible.webp',3,1,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(12,'Pure de Tomate Salsati','Pure De Tomate marca Salsati 520gr',560.00,'img-1656903373286-Pure de Tomate Salsati.webp',5,0,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(13,'Lechuga Criolla','Lechuga Criolla. Precio por Kilo',60.75,'img-1656903422208-Lechuga Criolla.webp',5,0,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(14,'LimpiaVidrios CIF','Limpiador de Vidrios Cif Bio Original 375gr',359.99,'img-1656903473984-LimpiaVidrios CIF.webp',2,1,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(15,'Ades Manzana','Jugo Ades-Soja sabor Manzana 1-Lt',426.00,'img-1656903510401-Ades Manzana.webp',1,0,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(16,'Papas Mc Cain Tradicionales','Papas Tradicional Mc Cain Bsa 720 Grm',236.77,'img-1660694127063-Papas Mc Cain Tradicionales.jpg',2,0,'2022-08-26 21:59:17','2022-08-26 21:59:17',NULL),(76,'GATORADE Manzana','Bebida Isotónica GATORADE Manzana Botella 1,25 L ',303.19,'img-1661950243716-undefined.jpg',1,0,'2022-08-31 12:50:43','2022-08-31 12:50:43',NULL);
 /*!40000 ALTER TABLE `products` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -167,14 +167,6 @@ LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
-
---
--- Dumping events for database 'alcer_db'
---
-
---
--- Dumping routines for database 'alcer_db'
---
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -185,4 +177,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-08-26 19:01:52
+-- Dump completed on 2022-08-31 10:07:35
