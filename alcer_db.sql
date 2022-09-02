@@ -1,10 +1,10 @@
 CREATE DATABASE  IF NOT EXISTS `alcer_db` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `alcer_db`;
--- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.29, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: alcer_db
+-- Host: localhost    Database: alcer_db
 -- ------------------------------------------------------
--- Server version	8.0.30
+-- Server version	8.0.29
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -29,7 +29,7 @@ CREATE TABLE `orders` (
   `order_date` datetime NOT NULL,
   `user_id` int NOT NULL,
   `discount` int DEFAULT '0',
-  `in_process` tinyint DEFAULT '1',
+  `order_status` varchar(255) DEFAULT '1',
   `createdAt` datetime DEFAULT NULL,
   `updatedAt` datetime DEFAULT NULL,
   `deletedAt` datetime DEFAULT NULL,
@@ -60,6 +60,9 @@ CREATE TABLE `orders_details` (
   `order_id` int NOT NULL,
   `product_id` int NOT NULL,
   `amount` int NOT NULL,
+  `createdAt` datetime DEFAULT NULL,
+  `updatedAt` datetime DEFAULT NULL,
+  `deletedAt` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_od_orders_idx` (`order_id`),
   KEY `fk_or_products_idx` (`product_id`),
@@ -169,6 +172,14 @@ LOCK TABLES `users` WRITE;
 INSERT INTO `users` VALUES (1,'manu@alcer.com','$2a$10$fIuFL9tk1/UKNtuOa45d3OUPj4VR.q/hLqYj77goSfJJ6fwmi9BGq','adminUser','manu','manu','2022-08-02','1661952854210.jpg','2022-08-31 13:34:14','2022-08-31 13:34:14',NULL);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Dumping events for database 'alcer_db'
+--
+
+--
+-- Dumping routines for database 'alcer_db'
+--
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -179,4 +190,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-09-02 11:55:44
+-- Dump completed on 2022-09-02 17:40:53
