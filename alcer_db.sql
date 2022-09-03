@@ -1,10 +1,10 @@
 CREATE DATABASE  IF NOT EXISTS `alcer_db` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `alcer_db`;
--- MySQL dump 10.13  Distrib 8.0.29, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
 --
--- Host: localhost    Database: alcer_db
+-- Host: 127.0.0.1    Database: alcer_db
 -- ------------------------------------------------------
--- Server version	8.0.29
+-- Server version	8.0.30
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -29,14 +29,15 @@ CREATE TABLE `orders` (
   `order_date` datetime NOT NULL,
   `user_id` int NOT NULL,
   `discount` int DEFAULT '0',
-  `order_status` varchar(255) DEFAULT '1',
+  `in_process` tinyint DEFAULT '1',
   `createdAt` datetime DEFAULT NULL,
   `updatedAt` datetime DEFAULT NULL,
   `deletedAt` datetime DEFAULT NULL,
+  `order_status` varchar(15) NOT NULL DEFAULT 'enCarrito',
   PRIMARY KEY (`id`),
   KEY `fk_orders_users_idx` (`user_id`),
   CONSTRAINT `fk_orders_users` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -45,6 +46,7 @@ CREATE TABLE `orders` (
 
 LOCK TABLES `orders` WRITE;
 /*!40000 ALTER TABLE `orders` DISABLE KEYS */;
+INSERT INTO `orders` VALUES (1,'2022-09-03 16:22:28',1,0,1,'2022-09-03 16:22:28','2022-09-03 16:22:28',NULL,'enCarrito');
 /*!40000 ALTER TABLE `orders` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -68,7 +70,7 @@ CREATE TABLE `orders_details` (
   KEY `fk_or_products_idx` (`product_id`),
   CONSTRAINT `fk_od_orders` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`),
   CONSTRAINT `fk_or_products` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -77,6 +79,7 @@ CREATE TABLE `orders_details` (
 
 LOCK TABLES `orders_details` WRITE;
 /*!40000 ALTER TABLE `orders_details` DISABLE KEYS */;
+INSERT INTO `orders_details` VALUES (1,1,2,1,'2022-09-03 16:27:08','2022-09-03 16:27:08',NULL),(2,1,4,1,'2022-09-03 16:27:22','2022-09-03 16:27:22',NULL),(3,1,4,1,'2022-09-03 16:27:37','2022-09-03 16:27:37',NULL),(4,1,6,1,'2022-09-03 16:30:33','2022-09-03 16:30:33',NULL);
 /*!40000 ALTER TABLE `orders_details` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -172,14 +175,6 @@ LOCK TABLES `users` WRITE;
 INSERT INTO `users` VALUES (1,'manu@alcer.com','$2a$10$fIuFL9tk1/UKNtuOa45d3OUPj4VR.q/hLqYj77goSfJJ6fwmi9BGq','adminUser','manu','manu','2022-08-02','1661952854210.jpg','2022-08-31 13:34:14','2022-08-31 13:34:14',NULL);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
-
---
--- Dumping events for database 'alcer_db'
---
-
---
--- Dumping routines for database 'alcer_db'
---
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -190,4 +185,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-09-02 17:40:53
+-- Dump completed on 2022-09-03 13:32:10
