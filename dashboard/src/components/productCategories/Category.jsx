@@ -1,14 +1,14 @@
 import React from "react";
 
-function Genre({ name, movies }) {
+function Category({ name, count }) {
     return (
         <div className="col-lg-6 mb-4">
             <div className="card text-white bg-dark  shadow">
                 <div className="card-body">
-                    {name} - {movies.length}
+                    {name} -  {count} productos
                 </div>
             </div>
         </div>
     );
 }
-export default Genre;
+export default Category;

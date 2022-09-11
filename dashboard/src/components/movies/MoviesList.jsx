@@ -2,7 +2,7 @@ import React from "react";
 import { Component } from "react";
 import Movie from "./Movie";
 
-const EXPRESS_HOST = "http://localhost:3001";
+const EXPRESS_HOST = "http://localhost:3030";
 
 export default class MoviesList extends Component {
     constructor(props) {

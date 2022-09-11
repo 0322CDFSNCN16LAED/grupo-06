@@ -1,21 +1,21 @@
-import GenresInDb from "./genres/GenresInDb";
+import CategoriesIdDb from "./productCategories/CategoriesIdDb";
 import LastMovie from "./LastMovie";
 import MiniCard from "./MiniCard";
 
 const miniCards = [
-    {
-        id: "24",
-        title: "Total de productos",
-        color: "success",
-        value: "79",
-        icon: "fa-baguette",
-    },
     {
         id: "32",
         title: "Usuarios Registrados",
         color: "warning",
         value: "49",
         icon: "fa-user",
+    },
+    {
+        id: "24",
+        title: "Total de productos",
+        color: "success",
+        value: "79",
+        icon: "fa-baguette",
     },
 ];
 
@@ -42,7 +42,7 @@ export default function Dashboard() {
                 {/* <!-- End content row last movie in Data Base --> */}
 
                 {/* <!-- Genres in DB --> */}
-                <GenresInDb />
+                <CategoriesIdDb />
             </div>
         </>
     );
