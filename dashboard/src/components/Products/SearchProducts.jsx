@@ -1,7 +1,7 @@
 import React from "react";
-import MovieCard from "./MovieCard";
+import ProductCard from "./ProductCard";
 
-function SearchMovies() {
+function SearchProducts() {
     const movies = [
         {
             Id: 55,
@@ -26,28 +26,28 @@ function SearchMovies() {
                     {/* Buscador */}
                     <form method="GET">
                         <div className="form-group">
-                            <label htmlFor="">Buscar por título:</label>
+                            <label htmlFor="">Buscar por nombre:</label>
                             <input type="text" className="form-control" />
                         </div>
-                        <button className="btn btn-info">Search</button>
+                        <button className="btn btn-info">Buscar</button>
                     </form>
                 </div>
             </div>
             <div className="row">
                 <div className="col-12">
-                    <h2>Películas para la búsqueda: {keyword}</h2>
+                    <h2>Resultados para la búsqueda: {keyword}</h2>
                 </div>
                 {movies.map((movie) => {
-                    return <MovieCard movie={movie} key={movie.Id} />;
+                    return <ProductCard movie={movie} key={movie.Id} />;
                 })}
             </div>
             {movies.length === 0 && (
                 <div className="alert alert-warning text-center">
-                    No se encontraron películas
+                    No se encontraron productos
                 </div>
             )}
         </div>
     );
 }
 
-export default SearchMovies;
+export default SearchProducts;

@@ -12,7 +12,7 @@ const propTypes = {
 };
 export default function MiniCard({ title, color, value, icon }) {
     return (
-        <div className="col-md-6 mb-2">
+        <div className="col-md-4 mb-4">
             <div className={`card border-left-${color} shadow h-100 py-2`}>
                 <div className="card-body">
                     <div className="row no-gutters align-items-center">

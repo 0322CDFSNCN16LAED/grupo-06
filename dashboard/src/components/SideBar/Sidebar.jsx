@@ -25,10 +25,10 @@ function Sidebar() {
 
             {/* <!-- Nav Item - Dashboard --> */}
             <li className="nav-item active">
-                <a className="nav-link" href="/">
-                    <i className="fas fa-fw fa-tachometer-alt"></i>
+                <Link className="nav-link collapsed" to="/" exact="true">
+                    <i className="fas fa-fw fa-user"></i>
                     <span>Dashboard - ALCER</span>
-                </a>
+                </Link>
             </li>
 
             {/* <!-- Divider --> */}
@@ -39,20 +39,20 @@ function Sidebar() {
 
             {/* <!-- Nav Item - Pages --> */}
             <li className="nav-item">
-                <Link className="nav-link collapsed" to="/movies" exact="true">
+                <Link className="nav-link collapsed" to="/products" exact="true">
                     <i className="fas fa-fw fa-folder"></i>
                     <span>Productos</span>
                 </Link>
             </li>
             <li className="nav-item">
-                <Link className="nav-link collapsed" to="/search" exact="true">
+                <Link className="nav-link collapsed" to="/searchProduct" exact="true">
                     <i className="fas fa-fw fa-search"></i>
                     <span>Buscar Producto</span>
                 </Link>
             </li>
 
             <li className="nav-item">
-                <Link className="nav-link collapsed" to="/movies" exact="true">
+                <Link className="nav-link collapsed" to="/users" exact="true">
                     <i className="fas fa-fw fa-user"></i>
                     <span>Usuarios</span>
                 </Link>
@@ -60,10 +60,10 @@ function Sidebar() {
 
             {/* <!-- Nav Item - Tables --> */}
             <li className="nav-item">
-                <a className="nav-link" href="/">
-                    <i className="fas fa-fw fa-table"></i>
+                <Link className="nav-link collapsed" to="/orders" exact="true">
+                    <i className="fas fa-fw fa-user"></i>
                     <span>Órdenes</span>
-                </a>
+                </Link>
             </li>
 
             {/* <!-- Divider --> */}

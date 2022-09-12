@@ -1,10 +1,12 @@
 import "./App.css";
 import Dashboard from "./components/Dashboard";
-import MoviesList from "./components/movies/MoviesList";
 import Sidebar from "./components/SideBar/Sidebar";
+import ProductList from "./components/Products/ProductList";
+import SearchProducts from "./components/Products/SearchProducts";
+import Users from "./components/Users/Users";
+import Orders from "./components/Orders/Orders";
 
 import { Route, Switch } from "react-router-dom";
-import SearchMovies from "./components/movies/SearchMovies";
 
 function App() {
     return (
@@ -25,8 +27,22 @@ function App() {
                                 component={Dashboard}
                                 exact={true}
                             />
-                            <Route path="/movies" component={MoviesList} />
-                            <Route path="/search" component={SearchMovies} />
+                            <Route
+                                path="/products"
+                                component={ProductList}
+                            />
+                            <Route
+                                path={"/searchProduct"}
+                                component={SearchProducts}
+                            />
+                            <Route
+                                path={"/users"}
+                                component={Users}
+                            />
+                            <Route
+                                path={"/orders"}
+                                component={Orders}
+                            />
                         </Switch>
                     </div>
                     {/* <!--End Content Row Top--> */}
