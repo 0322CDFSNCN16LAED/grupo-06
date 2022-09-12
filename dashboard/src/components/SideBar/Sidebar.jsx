@@ -61,7 +61,7 @@ function Sidebar() {
             {/* <!-- Nav Item - Tables --> */}
             <li className="nav-item">
                 <Link className="nav-link collapsed" to="/orders" exact="true">
-                    <i className="fas fa-fw fa-user"></i>
+                    <i className="fas fa-fw fa-table-cells"></i>
                     <span>Órdenes</span>
                 </Link>
             </li>

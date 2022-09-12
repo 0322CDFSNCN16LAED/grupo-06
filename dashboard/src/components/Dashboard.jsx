@@ -37,14 +37,14 @@ export default function Dashboard() {
             title: "Total de productos",
             color: "success",
             value: productNumber,
-            icon: "fa-baguette",
+            icon: "fa-bag-shopping",
         },
         {
             id: "3",
             title: "Categorías de Productos",
             color: "primary",
             value: categoryNumber,
-            icon: "fa-baguette",
+            icon: "fa-filter",
         }
     ];
 
