@@ -1,10 +1,10 @@
 CREATE DATABASE  IF NOT EXISTS `alcer_db` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `alcer_db`;
--- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.29, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: alcer_db
+-- Host: localhost    Database: alcer_db
 -- ------------------------------------------------------
--- Server version	8.0.30
+-- Server version	8.0.29
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -29,11 +29,14 @@ CREATE TABLE `orders` (
   `order_date` datetime NOT NULL,
   `user_id` int NOT NULL,
   `discount` int DEFAULT '0',
-  `in_process` tinyint DEFAULT '1',
+  `order_status` varchar(15) NOT NULL DEFAULT 'enCarrito',
+  `delivery_method` varchar(45) DEFAULT NULL,
+  `delivery_adress` varchar(255) DEFAULT NULL,
+  `between_streets` varchar(255) DEFAULT NULL,
+  `payment_method` varchar(45) DEFAULT NULL,
   `createdAt` datetime DEFAULT NULL,
   `updatedAt` datetime DEFAULT NULL,
   `deletedAt` datetime DEFAULT NULL,
-  `order_status` varchar(15) NOT NULL DEFAULT 'enCarrito',
   PRIMARY KEY (`id`),
   KEY `fk_orders_users_idx` (`user_id`),
   CONSTRAINT `fk_orders_users` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
@@ -46,7 +49,7 @@ CREATE TABLE `orders` (
 
 LOCK TABLES `orders` WRITE;
 /*!40000 ALTER TABLE `orders` DISABLE KEYS */;
-INSERT INTO `orders` VALUES (1,'2022-09-03 16:22:28',1,0,1,'2022-09-03 16:22:28','2022-09-03 16:22:28',NULL,'enCarrito'),(2,'2022-09-07 15:02:05',2,0,1,'2022-09-07 15:02:05','2022-09-07 15:02:05',NULL,'enCarrito');
+INSERT INTO `orders` VALUES (1,'2022-09-03 16:22:28',1,0,'enCarrito',NULL,NULL,NULL,NULL,'2022-09-03 16:22:28','2022-09-03 16:22:28',NULL),(2,'2022-09-07 15:02:05',2,0,'enCarrito',NULL,NULL,NULL,NULL,'2022-09-07 15:02:05','2022-09-07 15:02:05',NULL);
 /*!40000 ALTER TABLE `orders` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -175,6 +178,14 @@ LOCK TABLES `users` WRITE;
 INSERT INTO `users` VALUES (1,'manu@alcer.com','$2a$10$fIuFL9tk1/UKNtuOa45d3OUPj4VR.q/hLqYj77goSfJJ6fwmi9BGq','adminUser','manu','manu','2022-08-02','1661952854210.jpg','2022-08-31 13:34:14','2022-08-31 13:34:14',NULL),(2,'manucomun@alcer.com','$2a$10$5t8uqiB9YSX2d1D/E2nLx.ybvAENdsx.0yr.LSJNL5gdrhHh07O..','normalUser','ma','sdad','2022-09-21','defaultUser.png','2022-09-06 23:29:14','2022-09-06 23:29:14',NULL),(3,'otro@usuario.com','$2a$10$isJgT2yYEz1AyeQhmi6iQu6TsJEyc9XGqL2hZgkJb8jYRsQbTHeca','normalUser','otro','yosd','2022-09-20','1662565815143.jpg','2022-09-07 15:29:50','2022-09-07 15:50:57',NULL);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Dumping events for database 'alcer_db'
+--
+
+--
+-- Dumping routines for database 'alcer_db'
+--
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -185,4 +196,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-09-10 19:22:19
+-- Dump completed on 2022-09-13 12:11:39
