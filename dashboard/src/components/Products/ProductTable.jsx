@@ -33,7 +33,7 @@ export default ()=>{
                 </thead>
                 <tbody>
                 {productsList.map((item)=>{
-                    return <ProductLine id={item.id} name={item.name} category={item.category} key={item.id} />
+                    return <ProductLine id={item.id} name={item.name} category={item.category} key={item.name} />
                 })}
                 </tbody>    
             </table>
