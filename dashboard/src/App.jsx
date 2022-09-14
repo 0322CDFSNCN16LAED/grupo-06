@@ -1,7 +1,8 @@
 import "./App.css";
 import Dashboard from "./components/Dashboard";
 import Sidebar from "./components/SideBar/Sidebar";
-import ProductList from "./components/Products/ProductList";
+import ProductTable from "./components/Products/ProductTable";
+import ProductDetail from "./components/Products/ProductDetail"
 import SearchProducts from "./components/Products/SearchProducts";
 import Users from "./components/Users/Users";
 import Orders from "./components/Orders/Orders";
@@ -29,7 +30,12 @@ function App() {
                             />
                             <Route
                                 path="/products"
-                                component={ProductList}
+                                component={ProductTable}
+                                exact={true}
+                            />
+                            <Route
+                                path="/products/:id"
+                                component={ProductDetail}
                             />
                             <Route
                                 path={"/searchProduct"}
