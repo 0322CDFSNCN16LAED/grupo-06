@@ -8,7 +8,7 @@ function ProductLine({id, name, category}){
             <td>{name}</td>
             <td>{category}</td>
             <td>
-            <Link to={`products/?id=${id}`} exact="true">
+            <Link to={`products/${id}`} exact="true">
                 <span className="btn btn-warning">Ver Detalles</span>
             </Link>
             </td>
