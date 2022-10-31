@@ -16,12 +16,6 @@ export default function Dashboard() {
         .then(dataUsers=>dataUsers.json())
         .then(users=>setUserNumber(users.count));
 
-        fetch(`${EXPRESS_HOST}/api/products`)
-        .then(dataProducts=>dataProducts.json())
-        .then(products=>{
-            setProductNumber(products.count);
-            setCategoryNumber(products.countByCategory.length)
-        })
     }, [])
 
     const miniCards = [

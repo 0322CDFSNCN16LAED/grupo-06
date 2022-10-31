@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 import ProductLine from "./ProductLine";
 import "./productTable.css"
 
@@ -33,10 +34,13 @@ export default ()=>{
                 </thead>
                 <tbody>
                 {productsList.map((item)=>{
-                    return <ProductLine id={item.id} name={item.name} category={item.category} key={item.name} />
+                    return <ProductLine id={item.id} name={item.name} category={item.category} key={item.name}
+                     />
                 })}
                 </tbody>    
             </table>
         </React.Fragment>
     )
 };
+
+{/*  */}
